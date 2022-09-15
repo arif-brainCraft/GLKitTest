@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		139D72F428D2F4F10049A207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D72F328D2F4F10049A207 /* AppDelegate.swift */; };
 		139D72F628D2F4F10049A207 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D72F528D2F4F10049A207 /* SceneDelegate.swift */; };
-		139D72F828D2F4F10049A207 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D72F728D2F4F10049A207 /* ViewController.swift */; };
+		139D72F828D2F4F10049A207 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D72F728D2F4F10049A207 /* MyViewController.swift */; };
 		139D72FB28D2F4F10049A207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139D72F928D2F4F10049A207 /* Main.storyboard */; };
 		139D72FD28D2F4F20049A207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 139D72FC28D2F4F20049A207 /* Assets.xcassets */; };
 		139D730028D2F4F20049A207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139D72FE28D2F4F20049A207 /* LaunchScreen.storyboard */; };
+		139D730828D304030049A207 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D730728D304030049A207 /* Vertex.swift */; };
+		139D730A28D304AD0049A207 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D730928D304AD0049A207 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		139D72F028D2F4F10049A207 /* GLKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139D72F328D2F4F10049A207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		139D72F528D2F4F10049A207 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		139D72F728D2F4F10049A207 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		139D72F728D2F4F10049A207 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		139D72FA28D2F4F10049A207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		139D72FC28D2F4F20049A207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		139D72FF28D2F4F20049A207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		139D730128D2F4F20049A207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		139D730728D304030049A207 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		139D730928D304AD0049A207 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				139D72F328D2F4F10049A207 /* AppDelegate.swift */,
 				139D72F528D2F4F10049A207 /* SceneDelegate.swift */,
-				139D72F728D2F4F10049A207 /* ViewController.swift */,
+				139D72F728D2F4F10049A207 /* MyViewController.swift */,
 				139D72F928D2F4F10049A207 /* Main.storyboard */,
 				139D72FC28D2F4F20049A207 /* Assets.xcassets */,
 				139D72FE28D2F4F20049A207 /* LaunchScreen.storyboard */,
 				139D730128D2F4F20049A207 /* Info.plist */,
+				139D730728D304030049A207 /* Vertex.swift */,
+				139D730928D304AD0049A207 /* Extensions.swift */,
 			);
 			path = GLKitTest;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				139D72F828D2F4F10049A207 /* ViewController.swift in Sources */,
+				139D730A28D304AD0049A207 /* Extensions.swift in Sources */,
+				139D72F828D2F4F10049A207 /* MyViewController.swift in Sources */,
+				139D730828D304030049A207 /* Vertex.swift in Sources */,
 				139D72F428D2F4F10049A207 /* AppDelegate.swift in Sources */,
 				139D72F628D2F4F10049A207 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,6 +296,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U8DK4S4CV4;
+				GCC_PREPROCESSOR_DEFINITIONS = GLES_SILENCE_DEPRECATION;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GLKitTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -316,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U8DK4S4CV4;
+				GCC_PREPROCESSOR_DEFINITIONS = GLES_SILENCE_DEPRECATION;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GLKitTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
